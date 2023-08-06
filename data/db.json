@@ -1,0 +1,52 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "Sydney",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/sydney_cvr56p.png",
+      "description": "Sydney practically sparkles with its plied-by-yachts harbor, golden beaches, spectacular headland views, lush parks and gardens, abundance of sunshine, and overall cleanliness. Take a ferry or boat tour to see the unmistakable Sydney Opera House — a symbol of Australia’s oldest and biggest city, and of the continent itself — and Harbour Bridge from the water. Explore the city's wealth of picturesque coastal walks and truly great beaches; beloved Queenscliff Beach has a wide stretch of clean sand, pro-surfer-approved waves, a rock pool, and a lagoon."
+    },
+    {
+      "id": 2,
+      "name": "Queenstown",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/queenstown_nlwxmy.png",
+      "description": "Known as the 'adventure capital of the world', Queenstown is the ultimate playground for all things outdoors. Whatever your speed, this city has it: hiking (heli-hiking for the deeply venturesome), skiing, skydiving, rafting, winery-hopping, and cruising the Milford Sound are just a few examples of activities on offer. Queenstown is built around a finger of Lake Wakatipu, a glacial lake whose reflection of the surrounding mountain range — fittingly named the Remarkables — makes the scene all the more stunning."
+    },
+    {
+      "id": 3,
+      "name": "Istanbul",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350999/Workshop3_MAKAIA/istanbul_loqscz.png",
+      "description": "If you’ve already been to Rome, Paris, and Barcelona (perhaps multiple times), consider flying eastward to Istanbul. The city is an intoxicating jumble of domed and intricately mosaicked mosques, Ottoman-era palaces, maze-like markets, and hilly cobblestoned streets where you might run into a bar party spilling out the door and down the block. The food scene stretches way beyond the ubiquitous kebab; the mezze and grilled seafood are out of this world, and the city’s coffeehouse culture goes into the wee hours of the morning. "
+    },
+    {
+      "id": 4,
+      "name": "Palermo",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350999/Workshop3_MAKAIA/palermo_cnjlpi.png",
+      "description": "Sicily’s dynamic, decadent, sun-soaked capital is a dream for architecture buffs, foodies, and all lovers of life. You might think Italy’s biggest opera house would be in Rome or Milan, but it’s here. Teatro Massimo’s copper dome hulks some 250 feet above the historic piazza it stands on (The White Lotus fans will recognize the theater from season 2). Palermo’s striking gold-stone cathedral is one of the city’s many Arab-Norman structures that date to sometime around the turn of the last millennia. Head to its rooftop to see the ancient city’s terra-cotta skyline tumbling down toward the Tyrrhenian Sea. "
+    },
+    {
+      "id": 5,
+      "name": "Cape Town",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/capetown_u0pr0z.png",
+      "description": "Perched between iconic flat-topped Table Mountain and the Atlantic, Cape Town could get by on just its looks alone. But its heavy helping of natural beauty makes it a hot spot for activities, from adrenaline-fueled (diving with sharks, hiking Table Mountain, or taking a rotating cable car to its peak) to leisurely (swimming and sipping cocktails on celeb-loved Camps Bay Beach, biking along Sea Point Promenade) to cultural (museums, wine farms, cellar tours, music festivals, and dynamic dining, from waterfront South African grills to hidden-gem dim sum bars)."
+    },
+    {
+      "id": 6,
+      "name": "Seoul",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/seoul_p0fdqj.png",
+      "description": "A vibrant food and nightlife scene, urban green spaces, and cutting-edge everything has thrown Seoul into the upper ranks of best Asian cities. The past and present live side by side, with electrifying party districts, ancient palaces, ultra-modern subways, Buddhist temples, skyscrapers, and street markets all sharing the urban footprint. Nature is never hard to find in this fast-paced neon metropolis: beautifully landscaped parks along the Cheonggyecheon Stream and Han River, mountain hiking trails, and free outdoor gyms offer a peaceful respite for locals always on the move."
+    },
+    {
+      "id": 7,
+      "name": "Kyoto",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350997/Workshop3_MAKAIA/kyoto_puiekx.png",
+      "description": "Lovely, low-rise Kyoto is the antidote to sprawling, daunting Tokyo. The city packs a big punch on the UNESCO World Heritage front — it has 17 sites, including temples, shrines, and the famous Golden Pavilion (Kinkaku-ji). Cherry, plum, and willow trees spill toward Kyoto’s riverbanks and lanterns illuminate tiny beguiling alleys lined with wooden teahouses. The Gion district in the evening is extra magical."
+    },
+    {
+      "id": 8,
+      "name": "Dubrovnik",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351004/Workshop3_MAKAIA/dubrovnik_n82l19.png",
+      "description": "A good many movies and TV shows have benefitted from Dubrovnik’s cinematic good looks: Game of Thrones famously tops the list, but there are also little productions by the name of Succession and Star Wars. (The city’s beauty has not only caught the eye of Hollywood, but also UNESCO, which named Dubrovnik to a World Heritage Site.) It’s easy to cover ground in the so-called “Pearl of the Adriatic” — in the charming, compact, and traffic-free Old Town, you’ll see practically mint-condition medieval architecture, including the Gothic-Renaissance Rector’s Palace and the town’s thick stone walls — one of the best preserved medieval fortifications in the world."
+    }
+  ]
+}
