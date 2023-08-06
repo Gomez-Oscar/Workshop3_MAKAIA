@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: azure;
+  font-family: 'Courgette', cursive;
+}
+
+#page-title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.card {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #393e46;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card-title {
+  color: azure !important;
+}
+
+.btn.btn-primary {
+  margin: 0 !important;
+  background-color: #2b2a4c;
+  border: none;
+}
+
+.grid-elements {
+  margin: 0px 10px;
+  justify-content: center;
+}

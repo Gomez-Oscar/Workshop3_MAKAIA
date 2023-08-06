@@ -1,0 +1,11 @@
+{
+  "name": "workshop3_makaia",
+  "version": "1.0.0",
+  "description": "For academical purposes",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
