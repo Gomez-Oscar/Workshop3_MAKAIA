@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "For academical purposes",
   "main": "index.js",
-  "scripts": {
-    "server": "json-server --watch db.json"
-  },
+  "scripts": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
 }
