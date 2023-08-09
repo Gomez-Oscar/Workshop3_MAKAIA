@@ -49,10 +49,28 @@
       "description": "A good many movies and TV shows have benefitted from Dubrovnik’s cinematic good looks: Game of Thrones famously tops the list, but there are also little productions by the name of Succession and Star Wars. (The city’s beauty has not only caught the eye of Hollywood, but also UNESCO, which named Dubrovnik to a World Heritage Site.) It’s easy to cover ground in the so-called “Pearl of the Adriatic” — in the charming, compact, and traffic-free Old Town, you’ll see practically mint-condition medieval architecture, including the Gothic-Renaissance Rector’s Palace and the town’s thick stone walls — one of the best preserved medieval fortifications in the world."
     },
     {
-      "name": "Prueba",
+      "name": "Prueba 2",
       "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png",
-      "description": "pRRRRRR",
-      "id": 9
+      "description": "fsfgsfgsfg",
+      "id": 11
+    },
+    {
+      "name": "Prueba 3",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png",
+      "description": "dfsdfgsfg",
+      "id": 12
+    },
+    {
+      "name": "Prueba 4",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png",
+      "description": "fsdfg",
+      "id": 13
+    },
+    {
+      "name": "Prueba 5",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png",
+      "description": "fdgsdfg",
+      "id": 14
     }
   ]
 }

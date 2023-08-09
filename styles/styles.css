@@ -49,9 +49,9 @@ section {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .show {
-  visibility: block;
+  display: block;
 }

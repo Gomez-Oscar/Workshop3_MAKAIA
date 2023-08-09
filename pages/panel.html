@@ -69,6 +69,26 @@
               Submit
             </button>
           </form>
+          <form id="delete-city-form" class="form hidden">
+            <div class="mb-3">
+              <label for="city-name-input-to-delete" class="form-label"
+                >City Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="city-name-input-to-delete"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submit-delete-city-button"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -77,6 +97,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="../scripts/panel.js"></script>
   </body>
 </html>
