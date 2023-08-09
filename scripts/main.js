@@ -3,6 +3,7 @@ import { getCities } from './getCities.js';
 async function showCities() {
   const cities = await getCities();
   let container = document.querySelector('.elements-container');
+
   container.innerHTML = '';
 
   cities.map(city => {

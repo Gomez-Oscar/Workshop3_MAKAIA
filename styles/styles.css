@@ -10,13 +10,13 @@ body {
   font-family: 'Courgette', cursive;
 }
 
-#page-title {
-  text-align: center;
-  margin: 1rem 0;
-}
-
 footer {
   text-align: center;
+}
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card {
@@ -42,4 +42,16 @@ footer {
 .elements-container {
   margin: 0px 10px;
   justify-content: center;
+}
+
+#panelButton {
+  margin: auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: block;
 }
