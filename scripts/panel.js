@@ -56,7 +56,7 @@ submitAddCityButton.addEventListener('click', e => {
   };
 
   createCity(newCity);
-  alert('The city was created successfully');
+  alert(`The city ${newName} was created successfully`);
 });
 
 // Update city
@@ -117,7 +117,7 @@ submitUpdateCityButton.addEventListener('click', e => {
   };
 
   updateCity(cityToUpdate.id, updatedCity);
-  alert(`The city ${updatedCity.name} was deleted successfully`);
+  alert(`The city ${updatedCity.name} was updated successfully`);
 });
 
 // Delete city

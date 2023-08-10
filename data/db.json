@@ -53,6 +53,12 @@
       "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351000/Workshop3_MAKAIA/paris_r4bsql.png",
       "description": "hermosa ciudad de mis amores",
       "id": 9
+    },
+    {
+      "name": "cartagena",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351002/Workshop3_MAKAIA/cartagena_pydzmz.png",
+      "description": "Una de las ciudades mas visitadas de colombia",
+      "id": 10
     }
   ]
 }
