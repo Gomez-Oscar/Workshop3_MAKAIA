@@ -37,10 +37,10 @@
       "description": "A vibrant food and nightlife scene, urban green spaces, and cutting-edge everything has thrown Seoul into the upper ranks of best Asian cities. The past and present live side by side, with electrifying party districts, ancient palaces, ultra-modern subways, Buddhist temples, skyscrapers, and street markets all sharing the urban footprint. Nature is never hard to find in this fast-paced neon metropolis: beautifully landscaped parks along the Cheonggyecheon Stream and Han River, mountain hiking trails, and free outdoor gyms offer a peaceful respite for locals always on the move."
     },
     {
-      "id": 7,
       "name": "Kyoto",
-      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350997/Workshop3_MAKAIA/kyoto_puiekx.png",
-      "description": "Lovely, low-rise Kyoto is the antidote to sprawling, daunting Tokyo. The city packs a big punch on the UNESCO World Heritage front — it has 17 sites, including temples, shrines, and the famous Golden Pavilion (Kinkaku-ji). Cherry, plum, and willow trees spill toward Kyoto’s riverbanks and lanterns illuminate tiny beguiling alleys lined with wooden teahouses. The Gion district in the evening is extra magical."
+      "description": "Lovely, low-rise Kyoto is the antidote to sprawling, daunting Tokyo. The city packs a big punch on the UNESCO World Heritage front — it has 17 sites, including temples, shrines, and the famous Golden Pavilion (Kinkaku-ji). Cherry, plum, and willow trees spill toward Kyoto’s riverbanks and lanterns illuminate tiny beguiling alleys lined with wooden teahouses. The Gion district in the evening is extra magical.",
+      "id": 7,
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350997/Workshop3_MAKAIA/kyoto_puiekx.png"
     },
     {
       "id": 8,
@@ -49,16 +49,10 @@
       "description": "A good many movies and TV shows have benefitted from Dubrovnik’s cinematic good looks: Game of Thrones famously tops the list, but there are also little productions by the name of Succession and Star Wars. (The city’s beauty has not only caught the eye of Hollywood, but also UNESCO, which named Dubrovnik to a World Heritage Site.) It’s easy to cover ground in the so-called “Pearl of the Adriatic” — in the charming, compact, and traffic-free Old Town, you’ll see practically mint-condition medieval architecture, including the Gothic-Renaissance Rector’s Palace and the town’s thick stone walls — one of the best preserved medieval fortifications in the world."
     },
     {
-      "name": "Prueba 4",
-      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png",
-      "description": "fsdfg",
-      "id": 13
-    },
-    {
-      "name": "Prueba original",
-      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png",
-      "description": "fdgsdfg",
-      "id": 14
+      "name": "paris",
+      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351000/Workshop3_MAKAIA/paris_r4bsql.png",
+      "description": "hermosa ciudad de mis amores",
+      "id": 9
     }
   ]
 }

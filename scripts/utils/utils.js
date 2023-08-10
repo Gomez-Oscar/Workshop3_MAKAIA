@@ -1,4 +1,4 @@
-export function toggle(button, form) {
+export function toggleForm(button, form) {
   button.addEventListener('click', e => {
     e.preventDefault();
     const currentClass = form.classList.value.replace('form', '').trim();

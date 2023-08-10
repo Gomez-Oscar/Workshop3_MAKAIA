@@ -2,30 +2,39 @@ import { getCities } from './getCities.js';
 import { createCity } from './createCity.js';
 import { deleteCity } from './deleteCity.js';
 import { updateCity } from './updateCity.js';
-import { toggle } from './utils/utils.js';
+import { toggleForm } from './utils/utils.js';
 
-// toggle function for add city
+const NOT_FOUND_IMAGE_URL =
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691693860/Workshop3_MAKAIA/f9tbk7spl8qyvnomoumu.jpg';
+
+const images = [
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351004/Workshop3_MAKAIA/dubrovnik_n82l19.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351003/Workshop3_MAKAIA/barcelona_djqukd.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351002/Workshop3_MAKAIA/singapore_c2bxr7.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351002/Workshop3_MAKAIA/cartagena_pydzmz.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/seoul_p0fdqj.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/queenstown_nlwxmy.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/sydney_cvr56p.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351001/Workshop3_MAKAIA/capetown_u0pr0z.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351000/Workshop3_MAKAIA/paris_r4bsql.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351000/Workshop3_MAKAIA/buenosaires_khjins.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350999/Workshop3_MAKAIA/rome_d4otoo.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350999/Workshop3_MAKAIA/newyork_tabuyt.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350999/Workshop3_MAKAIA/palermo_cnjlpi.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350999/Workshop3_MAKAIA/istanbul_loqscz.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350998/Workshop3_MAKAIA/london_xmfu4a.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350998/Workshop3_MAKAIA/riodejaneiro_q7ivhp.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691350997/Workshop3_MAKAIA/kyoto_puiekx.png',
+  'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691694533/test.png',
+];
+
+// Add city
 
 const addCityButton = document.querySelector('#add-city-button');
 const addCityForm = document.querySelector('#add-city-form');
-
-addCityButton.addEventListener('click', e => {
-  e.preventDefault();
-  const currentClass = addCityForm.classList.value.replace('form', '').trim();
-  if (currentClass === 'hidden') {
-    addCityForm.classList.remove('hidden');
-    addCityForm.classList.add('show');
-  } else if (currentClass === 'show') {
-    addCityForm.classList.remove('show');
-    addCityForm.classList.add('hidden');
-  }
-});
-
-// toggle(addCityButton, addCityForm);
-
-// catch the new information to create a new city and create it
-
 const submitAddCityButton = document.querySelector('#submit-add-city-button');
+
+toggleForm(addCityButton, addCityForm);
 
 submitAddCityButton.addEventListener('click', e => {
   e.preventDefault();
@@ -35,95 +44,45 @@ submitAddCityButton.addEventListener('click', e => {
     '#city-description-input'
   ).value;
 
-  const city = {
+  let newImage = images.filter(img => img.includes(newName.toLowerCase()));
+  newImage.length === 0
+    ? (newImage = NOT_FOUND_IMAGE_URL)
+    : (newImage = newImage[0]);
+
+  const newCity = {
     name: newName,
-    img: 'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png',
+    img: newImage,
     description: newDescription,
   };
 
-  createCity(city);
-  alert('The City was created successfully');
+  createCity(newCity);
+  alert('The city was created successfully');
 });
 
-// toggle function for delete city
+// Update city
 
-const deleteCityForm = document.querySelector('#delete-city-form');
-const deleteCityButton = document.querySelector('#delete-city-button');
-
-deleteCityButton.addEventListener('click', e => {
-  e.preventDefault();
-  const currentClass = deleteCityForm.classList.value
-    .replace('form', '')
-    .trim();
-  if (currentClass === 'hidden') {
-    deleteCityForm.classList.remove('hidden');
-    deleteCityForm.classList.add('show');
-  } else if (currentClass === 'show') {
-    deleteCityForm.classList.remove('show');
-    deleteCityForm.classList.add('hidden');
-  }
-});
-
-// catch the name to delete the city
-
-const submitDeleteCityButton = document.querySelector(
-  '#submit-delete-city-button'
-);
-
-submitDeleteCityButton.addEventListener('click', async e => {
-  e.preventDefault();
-
-  const name = document.querySelector('#city-name-input-to-delete').value;
-  const cities = await getCities();
-  let city = cities.find(e => e.name.toLowerCase() === name.toLowerCase());
-
-  if (city) {
-    deleteCity(city.id);
-    alert(`The city ${city.name} was deleted successfully`);
-  } else {
-    alert(`The city ${name} was not found`);
-    document.querySelector('#delete-city-form').reset();
-  }
-});
-
-// toggle function for update city
-
-const searchCityForm = document.querySelector('#search-city-form');
 const updateCityButton = document.querySelector('#update-city-button');
-
-updateCityButton.addEventListener('click', e => {
-  e.preventDefault();
-  const currentClass = searchCityForm.classList.value
-    .replace('form', '')
-    .trim();
-  if (currentClass === 'hidden') {
-    searchCityForm.classList.remove('hidden');
-    searchCityForm.classList.add('show');
-  } else if (currentClass === 'show') {
-    searchCityForm.classList.remove('show');
-    searchCityForm.classList.add('hidden');
-  }
-});
-
+const searchCityForm = document.querySelector('#search-city-form');
 const submitSearchCityButton = document.querySelector(
   '#submit-search-city-button'
 );
-
 const submitUpdateCityButton = document.querySelector(
   '#submit-update-city-button'
 );
 
+toggleForm(updateCityButton, searchCityForm);
+
 const updateCityForm = document.querySelector('#update-city-form');
-let foundCity;
+let cityToUpdate;
 
 submitSearchCityButton.addEventListener('click', async e => {
   e.preventDefault();
 
   const name = document.querySelector('#city-name-input-to-search').value;
   const cities = await getCities();
-  foundCity = cities.find(e => e.name.toLowerCase() === name.toLowerCase());
+  cityToUpdate = cities.find(e => e.name.toLowerCase() === name.toLowerCase());
 
-  if (foundCity) {
+  if (cityToUpdate) {
     updateCityForm.classList.remove('hidden');
     updateCityForm.classList.add('show');
 
@@ -132,8 +91,9 @@ submitSearchCityButton.addEventListener('click', async e => {
       '#city-description-input-to-update'
     );
 
-    currentName.value = foundCity.name;
-    currentDescription.value = foundCity.description;
+    // the information in the DB is loaded in the form
+    currentName.value = cityToUpdate.name;
+    currentDescription.value = cityToUpdate.description;
 
     searchCityForm.classList.remove('show');
     searchCityForm.classList.add('hidden');
@@ -152,9 +112,36 @@ submitUpdateCityButton.addEventListener('click', e => {
 
   const updatedCity = {
     name: updatedName,
-    // img: 'https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691359907/Workshop3_MAKAIA/test_gglvt1.png',
+    img: cityToUpdate.img,
     description: updatedDescription,
   };
 
-  updateCity(foundCity.id, updatedCity);
+  updateCity(cityToUpdate.id, updatedCity);
+  alert(`The city ${updatedCity.name} was deleted successfully`);
+});
+
+// Delete city
+
+const deleteCityButton = document.querySelector('#delete-city-button');
+const deleteCityForm = document.querySelector('#delete-city-form');
+const submitDeleteCityButton = document.querySelector(
+  '#submit-delete-city-button'
+);
+
+toggleForm(deleteCityButton, deleteCityForm);
+
+submitDeleteCityButton.addEventListener('click', async e => {
+  e.preventDefault();
+
+  const name = document.querySelector('#city-name-input-to-delete').value;
+  const cities = await getCities();
+  let foundCity = cities.find(e => e.name.toLowerCase() === name.toLowerCase());
+
+  if (foundCity) {
+    deleteCity(foundCity.id);
+    alert(`The city ${foundCity.name} was deleted successfully`);
+  } else {
+    alert(`The city ${name} was not found`);
+    document.querySelector('#delete-city-form').reset();
+  }
 });
