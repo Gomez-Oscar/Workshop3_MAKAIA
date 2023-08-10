@@ -10,6 +10,7 @@ async function showCities() {
     const { name, img } = city;
 
     container.innerHTML += /*html*/ `
+    
     <div class="card d-flex align-items-center" style="width: 18rem">
       <h5 class="card-title">${name}</h5>
       <img

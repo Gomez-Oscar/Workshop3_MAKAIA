@@ -47,18 +47,6 @@
       "name": "Dubrovnik",
       "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351004/Workshop3_MAKAIA/dubrovnik_n82l19.png",
       "description": "A good many movies and TV shows have benefitted from Dubrovnik’s cinematic good looks: Game of Thrones famously tops the list, but there are also little productions by the name of Succession and Star Wars. (The city’s beauty has not only caught the eye of Hollywood, but also UNESCO, which named Dubrovnik to a World Heritage Site.) It’s easy to cover ground in the so-called “Pearl of the Adriatic” — in the charming, compact, and traffic-free Old Town, you’ll see practically mint-condition medieval architecture, including the Gothic-Renaissance Rector’s Palace and the town’s thick stone walls — one of the best preserved medieval fortifications in the world."
-    },
-    {
-      "name": "paris",
-      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351000/Workshop3_MAKAIA/paris_r4bsql.png",
-      "description": "hermosa ciudad de mis amores",
-      "id": 9
-    },
-    {
-      "name": "cartagena",
-      "img": "https://res.cloudinary.com/dbtqtuwzw/image/upload/v1691351002/Workshop3_MAKAIA/cartagena_pydzmz.png",
-      "description": "Una de las ciudades mas visitadas de colombia",
-      "id": 10
     }
   ]
 }
