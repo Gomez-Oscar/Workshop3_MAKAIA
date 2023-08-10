@@ -46,6 +46,7 @@
       <br />
       <section class="d-flex justify-content-center">
         <div class="row">
+          <!-- Form to add city -->
           <form id="add-city-form" class="form hidden">
             <div class="mb-3">
               <label for="city-name-input" class="form-label">City Name</label>
@@ -69,6 +70,61 @@
               Submit
             </button>
           </form>
+          <!-- Form to search the city to update-->
+
+          <form id="search-city-form" class="form hidden">
+            <div class="mb-3">
+              <label for="city-name-input-to-search" class="form-label"
+                >City Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="city-name-input-to-search"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submit-search-city-button"
+            >
+              Search
+            </button>
+          </form>
+
+          <!-- Form to update city-->
+
+          <form id="update-city-form" class="form hidden">
+            <div class="mb-3">
+              <label for="city-name-input-to-update" class="form-label"
+                >City Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="city-name-input-to-update"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="city-description-input-to-update" class="form-label"
+                >Description</label
+              >
+              <textarea
+                type="text"
+                class="form-control"
+                id="city-description-input-to-update"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submit-update-city-button"
+            >
+              Submit
+            </button>
+          </form>
+
+          <!-- Form to delete city -->
           <form id="delete-city-form" class="form hidden">
             <div class="mb-3">
               <label for="city-name-input-to-delete" class="form-label"
