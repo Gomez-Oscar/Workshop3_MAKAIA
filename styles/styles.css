@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: azure;
+  font-family: 'Courgette', cursive;
+}
+
+footer {
+  text-align: center;
+}
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #393e46;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card-title {
+  color: azure !important;
+}
+
+.btn.btn-primary {
+  margin: 0 !important;
+  background-color: #2b2a4c;
+  border: none;
+}
+
+.elements-container {
+  margin: 0px 10px;
+  justify-content: center;
+}
+
+#panelButton {
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}

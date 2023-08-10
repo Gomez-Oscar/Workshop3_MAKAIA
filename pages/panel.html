@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Wonderful Cities</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <section>
+        <h1 class="text-center">Administration Panel</h1>
+        <br />
+        <div class="row text-center">
+          <div class="col">
+            <button class="btn btn-primary btn-block" id="add-city-button">
+              Add City
+            </button>
+            <button class="btn btn-primary btn-block" id="update-city-button">
+              Update City
+            </button>
+            <button class="btn btn-primary btn-block" id="delete-city-button">
+              Delete City
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="row text-center">
+          <div class="col">
+            <a class="btn btn-primary" href="./index.html">Return</a>
+          </div>
+        </div>
+      </section>
+      <br />
+      <section class="d-flex justify-content-center">
+        <div class="row">
+          <!-- Form to add city -->
+          <form id="add-city-form" class="form hidden">
+            <div class="mb-3">
+              <label for="city-name-input" class="form-label">City Name</label>
+              <input type="text" class="form-control" id="city-name-input" />
+            </div>
+            <div class="mb-3">
+              <label for="city-description-input" class="form-label"
+                >Description</label
+              >
+              <textarea
+                type="text"
+                class="form-control"
+                id="city-description-input"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submit-add-city-button"
+            >
+              Submit
+            </button>
+          </form>
+          <!-- Form to search the city to update-->
+
+          <form id="search-city-form" class="form hidden">
+            <div class="mb-3">
+              <label for="city-name-input-to-search" class="form-label"
+                >City Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="city-name-input-to-search"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submit-search-city-button"
+            >
+              Search
+            </button>
+          </form>
+
+          <!-- Form to update city-->
+
+          <form id="update-city-form" class="form hidden">
+            <div class="mb-3">
+              <label for="city-name-input-to-update" class="form-label"
+                >City Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="city-name-input-to-update"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="city-description-input-to-update" class="form-label"
+                >Description</label
+              >
+              <textarea
+                type="text"
+                class="form-control"
+                id="city-description-input-to-update"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submit-update-city-button"
+            >
+              Submit
+            </button>
+          </form>
+
+          <!-- Form to delete city -->
+          <form id="delete-city-form" class="form hidden">
+            <div class="mb-3">
+              <label for="city-name-input-to-delete" class="form-label"
+                >City Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="city-name-input-to-delete"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submit-delete-city-button"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../scripts/panel.js"></script>
+  </body>
+</html>

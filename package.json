@@ -1,0 +1,12 @@
+{
+  "name": "workshop3_makaia",
+  "version": "1.0.0",
+  "description": "For academical purposes",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
